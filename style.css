@@ -1,0 +1,182 @@
+body {
+  background-image: url("Wallpaper.jpeg");
+  background-size: cover;
+  background-position: start;
+  background-repeat: no-repeat;
+}
+
+a img {
+  width: 60px;
+  
+}
+#youtube {
+  width: 90px;
+  margin-left: -15px;
+  margin-top: 3px;
+}
+
+#twitch {
+  width: 70px;
+  margin-left: -5px;
+  
+}
+
+#tiktok {
+  width: 70px;
+  margin-left: -5px;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute; 
+  /* Tetapkan posisi agar tetap di tempat */
+  z-index: 1002;
+  /* Pastikan tombol tetap di atas menu */
+  right: 0%;
+}
+
+.menu-icon:hover {
+  color: grey;
+}
+
+nav {
+  background-color: #00031FB0;
+  position: fixed;
+  box-shadow: 0px 1px 2px black;
+  top: 0;
+  right: -250px;
+  /* Awalnya sembunyikan menu di luar layar */
+  width: 60px;
+  height: 100%;
+  transition: right 0.3s ease-in-out;
+  padding-top: 60px;
+  /* Pastikan menu tidak bertumpuk dengan header */
+  z-index: 1000;
+  /* Memastikan menu di bawah header */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  margin-left: -20px;
+  margin-top: -2em;
+}
+
+nav.active {
+  right: 0;
+  /* Tampilkan menu di layar saat aktif */
+}
+
+.searchbox {
+  font-family: comic sans MS;
+  color: #FFFFFF;
+  position: absolute;
+  top: 10%;
+  backdrop-filter: blur(3px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.searchbox form input {
+  padding: 6px;
+  outline: none;
+  color: white;
+  text-decoration-color: #FFFFFFB5;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.searchbox p {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 13pt;
+  font-family: comic sans MS, Arial, Helvetica, sans-serif;
+}
+
+button {
+  background: transparent;
+  height: 35px;
+  width: 40px;
+  position: absolute;
+  right: 32px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -4px;
+  right: -2px;
+}
+
+#Dev {
+      position: absolute;
+      left: 15px;
+      color: #FFFFFFAD;
+    }
+
+/* Gaya untuk tombol yang dinonaktifkan */
+button:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+input[type="search"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+  background-image: url("Wallpaper_New_Tab.jpeg");
+  background-size: cover;
+  background-position: start;
+  background-repeat: no-repeat;
+  }
+  
+  .searchbox {
+  font-family: comic sans MS;
+  color: #FFFFFF;
+  position: absolute;
+  top: 10%;
+  backdrop-filter: blur(3px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  }
+  
+  button {
+    right: 64px;
+  }
+}

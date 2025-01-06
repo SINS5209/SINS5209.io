@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="https://www.youtube.com"><img src="YouTube.png" alt="YT" id="youtube"></a></li>
+      <li><a href="https://www.tiktok.com"><img src="Tiktok.png" alt="Tiktok" id="tiktok"></a></li>
+      <li><a href="https://www.twitch.tv"><img src="Twitch.png" alt="Twitch" id="twitch"></a></li>
+      <li><a href="https://www.twitter.com"><img src="X.png" alt="X"></a></li>
+      <li><a href="dev.html"><b><span id="Dev">DEV</span></b></a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="searchbox">
+      <p>Search Anything</p>
+      <form action="https://www.google.com/search">
+        <input 
+          type="search" 
+          name="q" 
+          id="src" 
+          placeholder="Cari sesuatu..." 
+          oninput="toggleSearchButton()"
+        >
+        <button type="submit" id="searchButton" disabled>
+          <img src="search.png" alt="search">
+        </button>
+      </form>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

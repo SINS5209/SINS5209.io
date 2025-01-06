@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dev page</title>
+  <style>
+    body {
+      background-image: url("Wallpaper.jpeg");
+      background-size: cover;
+      background-position: start;
+      background-repeat: no-repeat;
+    }
+
+    a img {
+      width: 60px;
+
+    }
+
+    #youtube {
+      width: 90px;
+      margin-left: -15px;
+      margin-top: 3px;
+    }
+
+    #twitch {
+      width: 70px;
+      margin-left: -5px;
+
+    }
+
+    #tiktok {
+      width: 70px;
+      margin-left: -5px;
+    }
+
+    #myyoutube {
+      width: 90px;
+      margin-left: -50px;
+    }
+
+    #mytiktok {
+      width: 70px;
+      margin-top: 10px;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      /* Tetapkan posisi agar tetap di tempat */
+      z-index: 1002;
+      /* Pastikan tombol tetap di atas menu */
+      right: 0%;
+    }
+
+    .menu-icon:hover {
+      color: grey;
+    }
+
+    nav {
+      background-color: #00031FB0;
+      position: fixed;
+      box-shadow: 0px 1px 2px black;
+      top: 0;
+      right: -250px;
+      /* Awalnya sembunyikan menu di luar layar */
+      width: 60px;
+      height: 100%;
+      transition: right 0.3s ease;
+      padding-top: 60px;
+      /* Pastikan menu tidak bertumpuk dengan header */
+      z-index: 1000;
+      /* Memastikan menu di bawah header */
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    nav ul li {
+      padding: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      display: block;
+      color: black;
+      margin-left: -20px;
+      margin-top: -2em;
+    }
+
+    nav.active {
+      right: 0;
+      /* Tampilkan menu di layar saat aktif */
+    }
+
+    .container {
+      font-family: comic sans MS;
+      color: #FFFFFF;
+      position: absolute;
+      top: 10%;
+      backdrop-filter: blur(3px);
+      left: 50%;
+      transform: translateX(-50%);
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-top: 0rem;
+      padding-bottom: 2rem;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .link ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    #Dev {
+      position: absolute;
+      left: 15px;
+      color: #FFFFFFAD;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    @media screen and (min-width: 600px) {
+      body {
+        background-image: url("Wallpaper_New_Tab.jpeg");
+        background-size: cover;
+        background-position: start;
+        background-repeat: no-repeat;
+      }
+     
+     .link {
+       justify-items: center;
+     }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">⟨Back</a>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="https://www.youtube.com"><img src="YouTube.png" alt="YT" id="youtube"></a></li>
+      <li><a href="https://www.tiktok.com"><img src="Tiktok.png" alt="Tiktok" id="tiktok"></a></li>
+      <li><a href="https://www.twitch.tv"><img src="Twitch.png" alt="Twitch" id="twitch"></a></li>
+      <li><a href="https://www.twitter.com"><img src="X.png" alt="X"></a></li>
+      <li><a href="dev.html"><b><span id="Dev">DEV</span></b></a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <h3>Hello</h3>
+      <h4>Create by SINS/SNOW</h4>
+      <div class="link">
+        <ul>
+          <li><a href="https://www.youtube.com/@SINS52"><img src="Youtube.png" alt="My channel" id="myyoutube"></a>
+          </li>
+          <li><a href="https://www.tiktok.com/@sins_gotou"><img src="Tiktok.png" alt="My tiktok" id="mytiktok"></a></li>
+        </ul>
+      </div>
+      <hr style="border: 0.5px solid white;">
+      <h5>Ini cuma hasil gabut jadi jangan berharap lebih.</h5>
+      <p>Tema nya ini ada lah kota <b>LIYUE</b></p>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
